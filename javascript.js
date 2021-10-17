@@ -17,9 +17,10 @@ function compute()
     compute();
 
 function day(){
-    let dow = ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7
- // dob is the day of the week you were born
- document.write("You were born on the" dow "of the week" )
+    let dowa = ( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7
+    var dow = dowa.toFixed(0);
+ // dow is the day of the week you were born
+ document.write("You were born on the"  + dow + " day of the week" )
 }
 
 day()
