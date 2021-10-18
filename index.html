@@ -2,20 +2,45 @@
 <html>
     <head>
         <link href="css/styles.css" rel="stylesheet" type="text/css"> 
+        <div class="intro">
+            <p>This is an Akan Name generator , you will have to put in your date of birth and gender below then click on the calculate button to display your Akan name.</p>
+        </div>
     </head>
     <body>
+        <div class="container">
+            <h3>Male</h3>
+            <ul>
+                <li>Sunday: Kwasi</li>
+                <li>Monday: Kwadwo</li>
+                <li>Tuesday: Kwabena</li>
+                <li>Wednesday: Kwaku</li>
+                <li>Thursday:  Yaw</li>
+                <li>Friday: Kofi</li>
+                <li>Saturday: Kwame</li>
+            </ul>
+            <h3>Female</h3>
+            <ul>
+                <li>Sunday: Akosua</li>
+                <li>Monday: Adwoa</li>
+                <li>Tuesday: Abenaa</li>
+                <li>Wednesday: Akua</li>
+                <li>Thursday: Yaa</li>
+                <li>Friday: Afua</li>
+                <li>Saturday: Ama</li>
+            </ul>
+        </div>
         <div class="box">
             <form>
                 YEAR : <br>
-                <input type = "text" placeholder="the year you were born eg:2002" name = "" id = "year"><br><br>
+                <input type = "text" placeholder="the year you were born" name = "" id = "year"><br><br>
                 MONTH : <br>
-                <input type = "text" placeholder="the month you were born eg:01 for january"name = "" id = "month"><br><br>
+                <input type = "text" placeholder="the month you were born"name = "" id = "month"><br><br>
                 DATE : <br>
                 <input type = "text" placeholder="the date you were born eg:25" name = "" id = "date"><br><br>
                 GENDER : <br>
                 <input type = "radio" name = "Gender" id = "gender">Female
-                <input type = "radio" name = "Gender" id = "gender">male<br><br>
-                <button onclick="day()">CALCULATE</button>
+                <input type = "radio" name = "Gender" id = "gender">Male<br><br>
+                <button onclick="compute()">CALCULATE</button>
             </form>
         </div>
         
